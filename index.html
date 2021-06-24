@@ -219,7 +219,7 @@
         padding: 5px 15px;
     }
     .main{
-      
+      height: 100vh;
       background: url(images/tab-cover.png);
       background-position: center;
       background-size: cover;
@@ -344,7 +344,7 @@
         padding: 5px 15px;
     }
     .main{
-      
+       height: 120vh;
         background: url(images/mobile-cover.png);
         background-position: center;
         background-size: cover;
@@ -388,7 +388,7 @@
        margin-right: 30px;
         float: right;
         height:max-content;
-        background-color: #1a1a1a;
+        background:transparent;
     }
     #About-us-h2{
         color: white;
@@ -400,6 +400,31 @@
         color: white;
         font-size: 20px;
     }
+
+
+
+    /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+ .main{
+     height:100vh;
+ }
+ .About-us{
+       text-align: right;
+       width: 60%;
+       margin-top: 25vh;
+       margin-right: 30px;
+        float: right;
+        height:max-content;
+        background:transparent;
+    }
+  
+}
 
 
 
