@@ -13,6 +13,7 @@
         margin: 0%;
         scroll-behavior: smooth;
         font-weight: 100;
+      
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     body::-webkit-scrollbar {
@@ -24,7 +25,9 @@
     ::-webkit-scrollbar-track {
     background: #000000; 
     }
-  
+    body{
+        background-color: #1a1a1a;
+    }
    
     header{
        margin-top: -12vh;
@@ -151,6 +154,48 @@
         color: white;
         font-size: 30px;
     }
+    .Tutorial{
+        height: 100vh;
+        background-color: #1a1a1a;
+    }
+    .Tutorial-heading{
+        margin-left:80px ;
+        margin-top: 10vh;
+        text-align: left;
+        font-size: 40px;
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .Tutorial-main{
+      width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    .Tutorial-left{
+        width: 40%;
+        margin-top: 10vh;
+        color: white;
+        margin-left:80px ;
+    }
+    .Tutorial-left h3{
+        font-size: 30px;
+    }
+    .Tutorial-right{
+        width: 46%;
+        color: #1a1a1a;
+        
+        margin-right:100px ;
+    }
+    iframe{
+        margin-top: 10vh;
+        margin-left: 50px;
+        height: 400px;
+        width: 700px;
+    }
+
 
 
 
@@ -278,6 +323,35 @@
         color: white;
         font-size: 30px;
     }
+    .Tutorial-heading{
+        margin-left:50px ;
+        margin-top: 10vh;
+        text-align: left;
+        font-size: 40px;
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .Tutorial-main{
+        height: 60vh;
+    }
+    .Tutorial-left{
+        width: 40%;
+        margin-left:50px ;
+    }
+    .Tutorial-left h3{
+        font-size: 30px;
+    }
+    .Tutorial-right{
+        width: 48%;
+        margin-right:30px ;
+    }
+    iframe{
+        margin-top: 15vh;
+        margin-left: 0px;
+        height: 400px;
+        width: 500px;
+    }
    
 }
 
@@ -400,6 +474,43 @@
         color: white;
         font-size: 20px;
     }
+    .Tutorial-heading{
+        margin-left:0px ;
+        margin-top: 10vh;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .Tutorial-main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .Tutorial-left{
+        margin-top: 2vh;
+        text-align: center;
+        width: 80%;
+        height: 40vh;
+        margin-left:0px ;
+    }
+    .Tutorial-left h3{
+        font-size: 20px;
+    }
+    .Tutorial-right{
+        margin-top: 5vh;
+        width: 90%;
+        height: 40vh;
+        margin-right:0px ;
+    }
+    iframe{
+        margin-top:1vh;
+        margin-left: 0px;
+       background-position: center;
+        height: 280px;
+        width:100%;
+    }
 
 
 
@@ -423,7 +534,53 @@
         height:max-content;
         background:transparent;
     }
-  
+    .Tutorial-left{
+        width: 90%;
+        margin-left:0px ;
+    }
+    .Tutorial-right{
+        width: 90%;
+        margin-right:0px ;
+    }
+    .min{ 
+        margin-right: 10px;
+        width: 35%;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: right;
+    }
+    #segment{
+        margin-top: 4vh;
+        margin-right: 20px;
+        font-size: 35px;
+    }
+    #segment1{display: none;
+        margin-top: 4vh;
+        margin-right: 20px;
+        font-size: 35px;
+    }
+    #navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+        margin-right: -50%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: fixed;
+        background-color: #1a1a1a;
+        box-shadow: 0 0 11px rgba(180, 180, 180, 0.2); 
+        
+    }
+    .navigation-div-items{
+        color: white;
+        display: block;
+    }
+    #shop{
+        padding: 5px 15px;
+    }
 }
 
 
@@ -434,17 +591,17 @@
       <!-- for header tab-->
     <header id="Header">
         <div class="logo">
-            <h2><a  href="#main">GTRobos.com</a> </h2>
+            <h2><a  href="https://www.gtrobos.com">GTRobos.com</a> </h2>
         </div>
         <div class="nav-contents">
             <ul class="nav-contents-item">
-                <li ><a href="#about"  > About</a></li>
-                <li>Tutorials</li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#Tutorial"> Tutorials</a></li>
                 <li>Projects</li>
                 <li>Contact</li>
                 <li>Blog</li>
                 <li>News</li>
-                <li id="shop"> <i class="material-icons" >shopping_cart</i>&nbsp; Shop</li>
+                <li id="shop"><a style="text-decoration: none;color: white;" href="https://www.gtrobos.in" id="close"> <i class="material-icons" >shopping_cart</i> Shop</a></li>
 
             </ul>
         </div>
@@ -458,13 +615,13 @@
     <section id="navigation-div">
         <ul class="navigation-div-items">
             <br><br>
-            <li><a style="text-decoration: none;color: white;" href="#about" id="close"> About</a></li><br><br>
-            <li>Tutorials</li><br><br>
-            <li>Projects</li><br><br>
-            <li>Contact</li><br><br>
+            <li><a style="text-decoration: none;color: white;"  href="#about" id="close1"> About</a></li><br><br>
+            <li><a style="text-decoration: none;color: white;"  href="#Tutorial" id="close2"> Tutorial</a></li><br><br>
+            <li><a style="text-decoration: none;color: white;"  href="#Project" id="close3">Project</a></li><br><br>
+            <li><a style="text-decoration: none;color: white;"  href="#Contact" id="close4">Contact</a></li><br><br>
             <li>Blog</li><br><br>
             <li>News</li><br><br>
-            <li id="shop"> <i class="material-icons" >shopping_cart</i>&nbsp; Shop</li>
+            <li id="shop"><a id="close" style="text-decoration: none;color: white;" href="https://www.gtrobos.in" > <i class="material-icons" >shopping_cart</i> Shop</a></li>
         </ul>
     </section>
 
@@ -484,7 +641,7 @@
             <br><br>
             <div class="buynow">
                 <br><br>
-               <a  style="text-decoration: none;" href=""><h2>Buy Now</h2></a> 
+               <a  style="text-decoration: none;" href="https://www.gtrobos.in"><h2>Buy Now</h2></a> 
             </div>
         </div>
  
@@ -504,14 +661,38 @@
         </div>
 
     </section>
+    <section class="Tutorial" id="Tutorial">
+        <br>
+        <div class="Tutorial-heading" >
+            <h2>Our Tutorials</h2>
+        </div>
+        <br><br>
+        <div class="Tutorial-main">
+             <div class="Tutorial-left">
+               <h3 title="GTrobos Tutorials" keywords="microcontroller Arduino Youtube Tutorial">We provide Tutorials on Every Devices And products
+                  That we are up with, Which could help our people to get hand-in-hand Experience
+                  on How the Device is made or Project is Done as! You could watch all those Tutorials 
+                  Arduino's , other microcontrollers and Electronic gadegets on Our Youtube Channel.
+               </h3>
+             </div>
 
-
+             <div class="Tutorial-right">
+                <iframe src="https://www.youtube.com/watch?v=QzvlHFMEOWI" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+        
+        </div>
+        
+    </section>
 
 
     <script>
         document.getElementById("segment").onclick = function() {myFunction()};
         document.getElementById("segment1").onclick = function() {myFunction1()};
-        document.getElementById("close").onclick = function() {myFunction1()};
+        document.getElementById("close1").onclick = function() {myFunction2()};
+        document.getElementById("close2").onclick = function() {myFunction1()};
+        document.getElementById("close3").onclick = function() {myFunction1()};
+        document.getElementById("close4").onclick = function() {myFunction1()};
     
         function myFunction() {
            document.getElementById("navigation-div").style="width:60%";
@@ -519,6 +700,12 @@
              document.getElementById("segment").style = "display:none;";
              }
        function myFunction1() {
+             document.getElementById("navigation-div").style="width:0%";
+             document.getElementById("segment").style = "display:block;";
+             document.getElementById("segment1").style = "display:none;";
+             
+           }
+           function myFunction2() {
              document.getElementById("navigation-div").style="width:0%";
              document.getElementById("segment").style = "display:block;";
              document.getElementById("segment1").style = "display:none;";
