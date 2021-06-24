@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT Robos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+        scroll-behavior: smooth;
+        font-weight: 100;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body::-webkit-scrollbar {
+        width: 3px;
+    } 
+    ::-webkit-scrollbar-thumb {
+    background:  #303534;
+    }
+    ::-webkit-scrollbar-track {
+    background: #000000; 
+    }
+  
+   
+    header{
+       margin-top: -12vh;
+        height: 12vh;
+        background-color: #1a1a1a;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    a{
+        text-decoration: none;color: white;
+    }
+    .logo{
+        width:30%;
+    }
+    .logo h2{
+        margin-top: 5vh;
+        margin-left: 60px;
+        color: white;
+        text-align: left;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .nav-contents{
+        width: 60%;
+        text-align: right;
+        margin-right:100px;
+    }
+    .nav-contents-item li{
+        color: white;
+       display: inline-flex;
+      padding: 10px 20px;
+      margin-top: 4vh;
+      font-size: 20px;
+    }
+    #shop{
+        background-color: rgb(178, 29, 236);
+        border-radius: 50px;
+        padding: 10px 25px;
+    }
+    .min{
+        width: 0%;
+        display: none;
+    }
+    .navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+        margin-right: -47%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    .navigation-div-items{
+      display: none;
+      
+    }
+    .main{
+        margin-top: 12vh;
+        height: 100vh;
+        background: url(images/cover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .main-contents{
+        height: 80vh;
+        width: 40%;
+        margin-left:80px ;
+    }
+   #main-content-h1{
+       font-size: 60px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color: white;
+       font-weight: 100;
+       
+      
+    }
+    #main-content-h2{
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .buynow{
+        box-shadow: 0 0 11px rgb(178, 29, 236); 
+        width: 100px;
+        height: 100px;
+        background:rgb(178, 29, 236) ;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .buynow h2{
+        color: white;
+        font-size: 20px;
+    }
+    .about{
+        height: 100vh;
+        background: url(images/cover2.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .About-us{
+       text-align: right;
+       width: 45%;
+       margin-top: 25vh;
+       margin-right: 100px;
+        float: right;
+        height: 70vh;
+        background-color: #1a1a1a;
+    }
+    #About-us-h2{
+        color: white;
+        font-size: 50px;
+        text-align: right;
+       font-weight: 500;
+    }
+    #About-us-h3{
+        color: white;
+        font-size: 30px;
+    }
+
+
+
+
+    /*for tab devices*/
+@media (min-width:768px) and (max-width: 1366px) {
+    header{
+        width: 100%;
+        justify-content: unset;
+    }
+    .logo{
+        width:30%;
+        text-align: left;
+        margin-left: 50px;
+    }
+    .logo h2{
+        margin-top: 5vh;
+        margin-left: 50px;
+        color: white;
+        text-align: left;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .nav-contents{
+      display: none;
+    }
+    .min{ display: inline-flex;
+        width: 60%;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: right;
+    }
+    #segment{
+        margin-top: 5vh;
+        margin-right: 0px;
+        font-size: 35px;
+    }
+    #segment1{display: none;
+        margin-top: 5vh;
+        margin-right: 0px;
+        font-size: 35px;
+    }
+  
+    .main{
+        width: 100%;
+        height: 90vh;
+    }
+    #navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+       
+        right: 0%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: fixed;
+        background-color: #1a1a1a;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    .navigation-div-items{
+        color: white;
+      display: block;
+    }
+    #shop{
+        padding: 5px 15px;
+    }
+    .main{
+      
+      background: url(images/tab-cover.png);
+      background-position: center;
+      background-size: cover;
+  }
+    
+    .main-contents{
+        height: 50vh;
+        width: 60%;
+        margin-left:0px ;
+        text-align: left;
+    }
+    #main-content-h1{
+       font-size: 40px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color: white;
+       margin-left: 50px;
+       font-weight: 100;
+     
+    }
+    #main-content-h2{
+        margin-left: 50px;
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .buynow{
+     
+        margin-left: 50px;
+        width: 100px;
+        height: 100px;
+        background:rgb(178, 29, 236) ;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+    
+    .buynow h2{
+      color: white;
+
+    }
+    .About-us{
+       text-align: right;
+       width: 50%;
+       margin-top: 25vh;
+       margin-right: 30px;
+        float: right;
+        height: 60vh;
+        background-color: #1a1a1a;
+    }
+    #About-us-h2{
+        color: white;
+        font-size: 50px;
+        text-align: right;
+       font-weight: 300;
+    }
+    #About-us-h3{
+        color: white;
+        font-size: 30px;
+    }
+   
+}
+
+
+
+/*for Mobile phones lanscape mode*/
+@media (min-width:280px) and (max-width: 767px) {
+    header{
+        width: 100%;
+        justify-content: unset;
+    }
+    .logo{
+        width:50%;
+        text-align: left;
+        margin-left: 30px;
+    }
+    .logo h2{
+        margin-top: 5vh;
+        margin-left: 0px;
+        color: white;
+        text-align: left;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .nav-contents{
+      display: none;
+    }
+    .min{ 
+        margin-right: 10px;
+        width: 35%;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: right;
+    }
+    #segment{
+        margin-top: 4vh;
+        margin-right: 20px;
+        font-size: 35px;
+    }
+    #segment1{display: none;
+        margin-top: 4vh;
+        margin-right: 20px;
+        font-size: 35px;
+    }
+    #navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+        margin-right: -50%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: fixed;
+        background-color: #1a1a1a;
+        box-shadow: 0 0 11px rgba(180, 180, 180, 0.2); 
+        
+    }
+    .navigation-div-items{
+        color: white;
+        display: block;
+    }
+    #shop{
+        padding: 5px 15px;
+    }
+    .main{
+      
+        background: url(images/mobile-cover.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .main-contents{
+        height: 80vh;
+        width: 90%;
+        margin-left:0px ;
+        text-align: center;
+    }
+    #main-content-h1{
+       font-size: 30px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color: white;
+       margin-left: 30px;
+       font-weight: 100;
+       
+      
+    }
+    #main-content-h2{
+        font-size: 15px;
+        margin-left: 30px;
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .buynow{
+        margin-left: 50px;
+        width: 100px;
+        height: 100px;
+        background:rgb(178, 29, 236) ;
+        border-radius: 50%;
+    }
+    .buynow h2{
+      color: white;
+
+    }
+    .About-us{
+       text-align: right;
+       width: 60%;
+       margin-top: 25vh;
+       margin-right: 30px;
+        float: right;
+        height:max-content;
+        background-color: #1a1a1a;
+    }
+    #About-us-h2{
+        color: white;
+        font-size: 25px;
+        text-align: right;
+       font-weight: 250;
+    }
+    #About-us-h3{
+        color: white;
+        font-size: 20px;
+    }
+
+
+
+}
+</style>
+<body>
+      <!-- for header tab-->
+    <header id="Header">
+        <div class="logo">
+            <h2><a  href="#main">GTRobos.com</a> </h2>
+        </div>
+        <div class="nav-contents">
+            <ul class="nav-contents-item">
+                <li ><a href="#about"  > About</a></li>
+                <li>Tutorials</li>
+                <li>Projects</li>
+                <li>Contact</li>
+                <li>Blog</li>
+                <li>News</li>
+                <li id="shop"> <i class="material-icons" >shopping_cart</i>&nbsp; Shop</li>
+
+            </ul>
+        </div>
+        <div class="min">
+            <i class="material-icons" id="segment">segment</i>
+            <i class="material-icons" id="segment1">segment</i>
+           
+        </div>
+    </header> 
+    <!--section for navigation side bar-->
+    <section id="navigation-div">
+        <ul class="navigation-div-items">
+            <br><br>
+            <li><a style="text-decoration: none;color: white;" href="#about" id="close"> About</a></li><br><br>
+            <li>Tutorials</li><br><br>
+            <li>Projects</li><br><br>
+            <li>Contact</li><br><br>
+            <li>Blog</li><br><br>
+            <li>News</li><br><br>
+            <li id="shop"> <i class="material-icons" >shopping_cart</i>&nbsp; Shop</li>
+        </ul>
+    </section>
+
+    <section class="main" id="main">
+        <div class="main-contents">
+            <br><br><br> 
+            <h1 id="main-content-h1" featured-content>
+                Build Strong.keep it Perfect !
+               Be That Nano,As Always <br>The Smart Choice.
+            </h1>
+            <br> <br>
+            <h2 id="main-content-h2">
+                We help to let your ideas turn into Amazing Projects.
+                Create what makes you Happy! GTRobos get you what it all needs to 
+                get your project to be framed as!
+            </h2>
+            <br><br>
+            <div class="buynow">
+                <br><br>
+               <a  style="text-decoration: none;" href=""><h2>Buy Now</h2></a> 
+            </div>
+        </div>
+ 
+    </section>
+    <section class="about" id="about">
+        <div class="About-us">
+           <h2 id="About-us-h2" title="About GTRobos">
+               About GTRobos
+           </h2>
+           <br><br>
+           <h3 id="About-us-h3" keywords="Arduino microcontroller Devices" >
+               We Create products with Arduino which is single-board microcontroller
+               capable for Building diffrent Digital devices and Let you purchase those microcontroller
+               Kits for Diffrent Daily use Digital Devices, That Could Benefit For Your IOT,Home Automation
+               or School/College Projects.
+           </h3>
+        </div>
+
+    </section>
+
+
+
+
+    <script>
+        document.getElementById("segment").onclick = function() {myFunction()};
+        document.getElementById("segment1").onclick = function() {myFunction1()};
+        document.getElementById("close").onclick = function() {myFunction1()};
+    
+        function myFunction() {
+           document.getElementById("navigation-div").style="width:60%";
+             document.getElementById("segment1").style = "display:block";
+             document.getElementById("segment").style = "display:none;";
+             }
+       function myFunction1() {
+             document.getElementById("navigation-div").style="width:0%";
+             document.getElementById("segment").style = "display:block;";
+             document.getElementById("segment1").style = "display:none;";
+             
+           }
+    
+    </script>
+</body>
+</html>
