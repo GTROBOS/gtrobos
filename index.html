@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GT Robos</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     *{
@@ -195,17 +196,114 @@
         height: 400px;
         width: 700px;
     }
+    .contact{
+        height: 100vh;
+        background: url(images/contact.png);
+        background-position: center;
+    }
+    .contact-heading{
+        margin-left:80px ;
+        margin-top: 12vh;
+        text-align: right;
+        margin-right: 100px;
+        font-size: 40px;
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .contact-main{
+        margin-top: 10vh;
+        width: 50%;
+        height: 60vh;
+        float: right;
+        margin-right: 100px;
+        
+    }
+    .contact-main-h3{
+        color: white;
+        font-size: 30px;
+        text-align: right;
+    }
+    .social-media{
+        float: right;
+        width: 40%;
+        height: 25vh;
+        margin-top: 5vh;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
 
+    .fa:hover {
+         opacity: 0.7;
+    }
+    .fa-facebook {
+         background: #3B5998;
+         color: white;
+    }
+    .fa-youtube {
+        background: #bb0000;
+         color: white;
+    }   
 
-
+    .fa-instagram {
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        color: white;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       height: 50vh;
+       width: 100%;
+       margin: 0%;
+       color: #7e7e7e;
+       background-color: #161616;
+    }
+    #footer-links{
+        color: #7e7e7e;
+    }
+    .footer1{
+        margin-top: 10vh;
+        margin-left: 80px;
+        width: 40%;
+        height: 30vh;
+    }
+    .footer2{
+        margin-top: 10vh;
+        margin-left: 80px;
+        width: 40%;
+        text-align: center;
+        height: 30vh;
+    }
+    .footerbottom{
+        width: 100%;
+        height: 20vh;
+    }
 
 
     /*for tab devices*/
 @media (min-width:768px) and (max-width: 1366px) {
-    header{
-        width: 100%;
-        justify-content: unset;
+    *{
+        padding: 0%;
+        margin: 0%;
+        
     }
+    body{
+        margin: 0px;
+    }
+    
+   
     .logo{
         width:30%;
         text-align: left;
@@ -308,7 +406,7 @@
        text-align: right;
        width: 50%;
        margin-top: 25vh;
-       margin-right: 30px;
+       margin-right: 20px;
         float: right;
         height: 60vh;
         background-color: #1a1a1a;
@@ -347,11 +445,97 @@
         margin-right:30px ;
     }
     iframe{
+        display: inline-flex;
+        justify-content: center;
         margin-top: 15vh;
-        margin-left: 0px;
-        height: 400px;
-        width: 500px;
+        margin-right: 10px;
+        height:280px;
+        width: 350px;
     }
+    .contact{
+        height: 100vh;
+        background: url(images/contact-tab.png);
+        background-position: center;
+       
+    }
+    .contact-heading{
+        margin-right:10px ;
+        margin-top: 12vh;
+        text-align: right;
+        margin-left: 50px;
+        font-size: 40px;
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .contact-main{
+        margin-top: 10vh;
+        width: 50%;
+        height: 60vh;
+        float: right;
+        margin-right: 20px;
+       
+    }
+   
+    .contact-main-h3{
+        color: white;
+        font-size: 30px;
+        text-align: right;
+    }
+    .social-media{
+        float: right;
+        width: 50%;
+        height: 25vh;
+        margin-top: 5vh;
+    }
+    .fa {
+        padding: 15px;
+        font-size: 25px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+         opacity: 0.7;
+    }
+    .fa-facebook {
+         background: #3B5998;
+         color: white;
+    }
+    .fa-youtube {
+        background: #bb0000;
+         color: white;
+    }   
+
+    .fa-instagram {
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        color: white;
+    }
+    .footer1{
+        margin-top: 10vh;
+        margin-left:0px;
+        width: 50%;
+        height: 30vh;
+    }
+    .footer1-data{
+        margin-left: 30px;
+    }
+    .footer2{
+        text-align: center;
+        margin-top: 10vh;
+        margin-left: 0px;
+        width: 50%;
+        height: 30vh;
+    }
+    
+
    
 }
 
@@ -457,7 +641,7 @@
     }
     .About-us{
        text-align: right;
-       width: 60%;
+       width: 70%;
        margin-top: 25vh;
        margin-right: 30px;
         float: right;
@@ -474,6 +658,9 @@
         color: white;
         font-size: 20px;
     }
+    .Tutorial{
+        height: max-content;
+    }
     .Tutorial-heading{
         margin-left:0px ;
         margin-top: 10vh;
@@ -485,6 +672,7 @@
     }
     .Tutorial-main{
         width: 100%;
+        height: max-content;
         display: flex;
         justify-content: center;
     }
@@ -500,7 +688,7 @@
     }
     .Tutorial-right{
         margin-top: 5vh;
-        width: 90%;
+        width: 80%;
         height: 40vh;
         margin-right:0px ;
     }
@@ -508,8 +696,106 @@
         margin-top:1vh;
         margin-left: 0px;
        background-position: center;
-        height: 280px;
+        height: 200px;
         width:100%;
+    }
+    .contact{
+        height: 100vh;
+        width: 100%;
+        background: url(images/contact-mobile.png);
+        background-position: center;
+        background-size: cover;
+       
+    }
+    .contact-heading{
+      
+        margin-top: 12vh;
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+        margin-left: 0px;
+        font-size: 23px;
+        color: rgb(230, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .contact-main{
+      
+        float: none;
+       
+        margin-top: 10vh;
+        text-align:center;
+        width:100%;
+        height: 40vh;
+       margin-right:0px;
+       margin-left: 0px;
+    }
+   
+    .contact-main-h3{
+        display: inline-flex;
+        justify-content: center;
+        width: 80%;
+        text-align:center;  
+        color: white;
+        font-size: 20px;
+
+    }
+    .social-media{
+        float:none;
+        width: 100%;
+        height: 25vh;
+        margin-top: 5vh;
+    }
+    .fa {
+        padding: 15px;
+        font-size: 25px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+         opacity: 0.7;
+    }
+    .fa-facebook {
+         background: #3B5998;
+         color: white;
+    }
+    .fa-youtube {
+        background: #bb0000;
+         color: white;
+    }   
+
+    .fa-instagram {
+        background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        color: white;
+    }
+    .footer{
+        height: max-content;
+    }
+    .footer1{
+        margin-top: 5vh;
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        height: 10vh;
+    }
+    .footer2{
+        margin-top: 10vh;
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        height: 40vh;
+    }
+    
+    .footerbottom{
+        height: 15vh;
     }
 
 
@@ -520,14 +806,14 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
+ 
   /* CSS */
  .main{
      height:100vh;
  }
  .About-us{
        text-align: right;
-       width: 60%;
+       width: 70%;
        margin-top: 25vh;
        margin-right: 30px;
         float: right;
@@ -535,7 +821,7 @@
         background:transparent;
     }
     .Tutorial-left{
-        width: 90%;
+        width: 80%;
         margin-left:0px ;
     }
     .Tutorial-right{
@@ -581,6 +867,10 @@
     #shop{
         padding: 5px 15px;
     }
+    .Tutorial{
+        height: max-content;
+    }
+   
 }
 
 
@@ -598,7 +888,7 @@
                 <li><a href="#about"> About</a></li>
                 <li><a href="#Tutorial"> Tutorials</a></li>
                 <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#Contact"> Contact</a></li>
                 <li>Blog</li>
                 <li>News</li>
                 <li id="shop"><a style="text-decoration: none;color: white;" href="https://www.gtrobos.in" id="close"> <i class="material-icons" >shopping_cart</i> Shop</a></li>
@@ -671,20 +961,60 @@
              <div class="Tutorial-left">
                <h3 title="GTrobos Tutorials" keywords="microcontroller Arduino Youtube Tutorial">We provide Tutorials on Every Devices And products
                   That we are up with, Which could help our people to get hand-in-hand Experience
-                  on How the Device is made or Project is Done as! You could watch all those Tutorials 
-                  Arduino's , other microcontrollers and Electronic gadegets on Our Youtube Channel.
+                  on How the Device is made or Project is Done as! You could watch all those Tutorials on
+                  Arduino , other microcontrollers and Electronic gadgets on Our Youtube Channel.
                </h3>
              </div>
 
              <div class="Tutorial-right">
                 <iframe src="https://www.youtube.com/embed/QzvlHFMEOWI" title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </div>
+            <br> 
+            </div>
         
         </div>
         
     </section>
+  
+    <!--section for conactact us -->
+    <section class="contact" id="Contact">
+        <br>
+        <div class="contact-heading">
+            <h2>Connect With Us</h2>
+        </div>
+        <div class="contact-main">
+            <h3 class="contact-main-h3">We are here for You with whole support
+                Where,Whenever you are into a little snag , just Connect With US!
+            </h3>
+            <br>
+            <!--Social media pages-->
+            <div class="social-media">
+                <a href="https://www.facebook.com/gtrobos.in/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/gtrobos.in/" class="fa fa-instagram"></a>
+                <a href="https://youtube.com/channel/UCNhwYTLIveJw2e5BNQTU4XA" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </section>
+    <!--Footer Section-->
+    <section class="footer">
+        <div class="footer1">
+            <div class="footer1-data">
+                <h1 style="color: white;">GTRobos.com</h1>
+                <br><h3>Build Strong And Beautiful</h3>
+            </div>
+        </div>
+        <div class="footer2">
+            <h2>Get To Know More</h2>
+            <br><h3><a id="footer-links" href="mailto:gtrobos.com@gmail.com">Mail Us</a> </h3>
+            <br><h3>Phone Us</h3>
+            <br><h3>Our Team</h3>
+            <br><h3>Designed and Developed By <a href="http://www.bludek.co.in" >Bludek</a> </h3>
+        </div>
+        <div class="footerbootom">
+            <h3> &#169;GTRobos2021. all rights reserved</h3>
+        </div>
 
+    </section>
 
     <script>
         document.getElementById("segment").onclick = function() {myFunction()};
