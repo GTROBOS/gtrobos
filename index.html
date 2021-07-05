@@ -7,20 +7,20 @@
     <title>GT Robos - Build Strong and Beautiful</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="description" content="GTRobos are into Electronics Training Kit, Electronic Kit manufacturers &amp; DIY Kits , OEM manufacturers India. we provide Electronics Training Kit, Electronic Kit across India. ">
-    <meta name="Keywords" content="Electronics Training Kit,DIY Kits, Electronic Kit, manufacturers, suppliers, oems, oem manufacturers, exporters, traders, dealers, manufacturing companies, producers, India">
+    <meta name="description" content="GTRobos are into Electronics Training Kit, Electronic Kit manufacturers &amp; DIY Kits , OEM manufacturers in India.GTRobos provide Electronics Training Kit, Electronic Kit across India. ">
+    <meta name="Keywords" content="GTRobos, gtrobos ,Electronics Training Kit,DIY Kits, Electronic Kit, manufacturers, suppliers, oems, oem manufacturers, exporters, traders, dealers, manufacturing companies, producers, India">
     <meta name="distribution" content="Global">
     <meta name="language" content="English">
     <meta name="doc-type" content="Public">
     <meta name="author" content="GTRobos">
     <meta name="theme-color" content="#1a1a1a">
     <meta data-react-helmet="true" property="og:title" content="GT Robos - Build Strong and Beautiful">
-   <meta data-react-helmet="true" property="og:description" content="GTRobos are into Electronics Training Kit, Electronic Kit manufacturers &amp; OEM manufacturers India. we provide Electronics Training Kit, Electronic Kit across India. |https://www.gtrobos.com">
+   <meta data-react-helmet="true" property="og:description" content="GTRobos are into Electronics Training Kit, Electronic Kit manufacturers &amp; OEM manufacturers India.GTRobos provide Electronics Training Kit, Electronic Kit across India. |https://www.gtrobos.com">
    <meta data-react-helmet="true" property="og:url" content="https://www.gtrobos.com">
    <meta data-react-helmet="true" property="og:site_name" content="GT Robos - Build Strong and Beautiful">
-   <meta data-react-helmet="true" name="twitter:description" content="GTRobos are into Electronics Training Kit, Electronic Kit manufacturers &amp; OEM manufacturers India. we provide Electronics Training Kit, Electronic Kit across India. |https://www.gtrobos.com">
+   <meta data-react-helmet="true" name="twitter:description" content="GTRobos are into Electronics Training Kit, Electronic Kit manufacturers &amp; OEM manufacturers India. GTRobos provide Electronics Training Kit, Electronic Kit across India. |https://www.gtrobos.com">
    <meta data-react-helmet="true" name="twitter:title" content="GT Robos - Build Strong and Beautiful">
-   <meta property="twitter:description" content="GTRobos are into Electronics Training Kit,DIY Kits , Electronic Kit manufacturers &amp; OEM manufacturers India. we provide Electronics Training Kit, Electronic Kit across India. ">
+   <meta property="twitter:description" content="GTRobos are into Electronics Training Kit,DIY Kits , Electronic Kit manufacturers &amp; OEM manufacturers India. GTRobos provide Electronics Training Kit, Electronic Kit across India. ">
    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -56,6 +56,7 @@
         background-color: #1a1a1a;
         position: fixed;
         display: flex;
+        z-index: 99;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
@@ -958,12 +959,12 @@
     <section class="main" id="main">
         <div class="main-contents">
             <br><br><br> 
-            <h1 id="main-content-h1" featured-content>
+            <h1 id="main-content-h1" class="main-content-h1" featured-content>
                 Build Strong.keep it Perfect !
                Be That Nano,As Always <br>The Smart Choice.
             </h1>
             <br> <br>
-            <h2 id="main-content-h2">
+            <h2 id="main-content-h2" class="main-content-h2">
                 We help to let your ideas turn into Amazing Projects.
                 Create what makes you Happy! GTRobos get you what it all needs to 
                 get your project to be framed as!
@@ -978,11 +979,11 @@
     </section>
     <section class="about" id="about">
         <div class="About-us">
-           <h2 id="About-us-h2" title="About GTRobos">
+           <h2 id="About-us-h2" class="About-us-h2" title="About GTRobos">
                About GTRobos
            </h2>
            <br><br>
-           <h3 id="About-us-h3" keywords="Arduino microcontroller Devices" >
+           <h3 id="About-us-h3" class="About-us-h3" keywords="Arduino microcontroller Devices" >
                We Create products with Arduino which is single-board microcontroller
                capable for Building diffrent Digital devices and Let you purchase those microcontroller
                Kits for Diffrent Daily use Digital Devices, That Could Benefit For Your IOT,Home Automation
@@ -1056,32 +1057,11 @@
 
     </section>
 
-    <script>
-        document.getElementById("segment").onclick = function() {myFunction()};
-        document.getElementById("segment1").onclick = function() {myFunction1()};
-        document.getElementById("close1").onclick = function() {myFunction2()};
-        document.getElementById("close2").onclick = function() {myFunction1()};
-        document.getElementById("close3").onclick = function() {myFunction1()};
-        document.getElementById("close4").onclick = function() {myFunction1()};
-    
-        function myFunction() {
-           document.getElementById("navigation-div").style="width:60%";
-             document.getElementById("segment1").style = "display:block";
-             document.getElementById("segment").style = "display:none;";
-             }
-       function myFunction1() {
-             document.getElementById("navigation-div").style="width:0%";
-             document.getElementById("segment").style = "display:block;";
-             document.getElementById("segment1").style = "display:none;";
-             
-           }
-           function myFunction2() {
-             document.getElementById("navigation-div").style="width:0%";
-             document.getElementById("segment").style = "display:block;";
-             document.getElementById("segment1").style = "display:none;";
-             
-           }
-    
-    </script>
+  
+     <!--===== SCROLL REVEAL =====-->
+     <script src="https://unpkg.com/scrollreveal"></script>
+
+     <script src="./main.js"></script>
+     
 </body>
 </html>
