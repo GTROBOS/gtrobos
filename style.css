@@ -1,0 +1,1017 @@
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    scroll-behavior: smooth;
+
+  }
+body::-webkit-scrollbar {
+    width: 3px;
+} 
+::-webkit-scrollbar-thumb {
+background:  #303534;
+}
+::-webkit-scrollbar-track {
+background: #000000; 
+}
+.material-icons{
+  color:#000000
+}
+body{
+  background-color: #fbfefd;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background: url(images/cover.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-nav{
+    height: 10vh;
+    width: 100%;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo{
+    width: 20%;
+   
+}
+.logo h2{
+    padding: 32px 30px;
+    font-size: 30px;
+    
+}
+.nav-middle{
+    width: 60%;
+    justify-content: center;
+    background-color: transparent;
+    display: inline-flex;
+}
+.nav-middle ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 35px 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.nav-middle ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-right{
+    width:20%;
+    
+}
+.nav-right ul li{
+  text-decoration: none;
+  display: inline-block;
+  padding: 32px 30px;
+  text-align: center;
+  font-size: 18px;
+}
+.navigation-div{
+  overflow: hidden;
+  width: 0%;
+  height: 100vh;
+  margin-right: -47%;
+  right: 50%;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 99;
+  transition: ease-in-out .5s;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.header-side{
+    margin-top: 5vh;
+    width: 20%;
+    height: 60vh;
+    background-color: transparent;
+}
+.header-bottom{
+
+    height: 20vh;
+    display:inline;
+    justify-content:center ;
+    width: 100%;
+}
+.header-bottom h2{
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 1000;
+}
+.header-bottom h3{
+    text-align: center;
+}
+.product{
+  height:max-content;
+  background: url(images/productcover.png);
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-size: cover;
+  background-color: #fbfefd;
+  
+ 
+}
+.product h1{
+  font-size: 40px;
+  text-align: center;
+}
+.products{
+  margin-top: 10vh;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+}
+.product-box{
+width: 25%;
+height: 550px;
+border-radius: 15px;
+margin: 20px;
+backdrop-filter: blur(16px) saturate(188%);
+-webkit-backdrop-filter: blur(16px) saturate(188%);
+background-color: rgba(253, 253, 253, 0.75);
+text-align: center;
+}
+.image{
+  margin-top: 15px;
+  height: 400px;
+  width: 350px;
+}
+.product-box-link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  
+}
+.product-box-link a{
+  padding: 20px 50px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: #000000;
+}
+.tutorials{
+  height:100vh;
+  background: url(images/tutorial.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tutorials h1{
+  
+  text-align: center;
+  font-size: 40px;
+}
+.tutorials-text{
+  right: 100px;
+  width: 45%;
+  position: absolute;
+  text-align: right;
+  font-size: 28px;
+}
+.tutorials-text h3{
+  margin-top: 20vh;
+  font-size: 25px;
+}
+.tutorials-text a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px 30px;
+  border: 1px solid red;
+  background-color: red;
+}
+.service{
+  background-color: #fbfefd;
+  height:60vh;
+  text-align: center;
+}
+.service h1{
+  font-size: 40px;
+}
+.services{
+  margin-top: 5vh;
+display: flex;
+justify-content: center;
+height: 40vh;
+}
+.servicesbox{
+  width: 15%;
+  margin: 25px;
+  height: 170px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 #c8d7ff, 0 6px 20px 0 #c0d0ff;
+}
+.servicesbox1{
+  width: 15%;
+  margin: 25px;
+  height: 170px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 #c0ffb7, 0 6px 20px 0 #a7ff99;
+}
+.servicesbox2{
+  width: 15%;
+  margin: 25px;
+  height: 170px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 #ffb1c9, 0 6px 20px 0 #ffa8c2;
+}
+#serviceiconsship{
+  font-size: 100px;
+  color: #527fff;
+}
+#serviceiconspayment{
+  font-size: 100px;
+  color: #35ff16;
+}
+#serviceiconssupport{
+  font-size: 100px;
+  color: #ff135a;
+}
+
+.min-bar{
+  display: none;
+  
+}
+.about{
+  height: 70vh;
+  background-image: url(images/about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about h1{
+  font-size: 40px;
+  text-align: center;
+}
+.about-us{
+  margin: 10vh auto;
+  width: 60%;
+ 
+}
+.about-us h3{
+
+  text-align: center;
+  font-size: 30px;
+}
+.contact{
+  height: 60vh;
+  background-image: url(images/contact.png);
+  background-position: center;
+   background-repeat: no-repeat;
+}
+.contact h1{
+  font-size: 40px;
+  text-align: center;
+}
+.contactus{
+  margin: auto;
+  width: 50%;
+}
+.contactus h3{
+  margin-top: 5vh;
+  font-size: 30px;
+  text-align: center;
+}
+.social-media{
+  text-align: center;
+  height: 25vh;
+  width:80%;
+  margin:5vh auto;
+ 
+}
+.fab{
+  font-size: 55px;
+  margin: 25px;
+  color: rgb(230, 28, 28);
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ height: 50vh;
+ width: 100%;
+ margin: 0%;
+ color: #1a1a1a;
+ background-color: #fbfefd;
+}
+#footer-links{
+  color: #080808;
+  text-decoration: none;
+}
+.footer1{
+  margin-top: 10vh;
+  margin-left: 80px;
+  width: 40%;
+  height: 30vh;
+}
+.footer2{
+  margin-top: 10vh;
+  margin-left: 80px;
+  width: 40%;
+  text-align: center;
+  height: 30vh;
+}
+.footer2 h3{
+  text-align:center;
+}
+.footer2 a{
+  text-decoration: none;
+  color: #000;
+}
+.footerbottom{
+  width: 100%;
+  height: 20vh;
+}
+
+
+
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+  .header{
+      height: 65vh;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  } 
+  .header-nav{
+      height: 10vh;
+      width: 100%;
+      background: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .logo{
+      width: 25%;
+     
+  }
+  .logo h2{
+      padding: 32px 15px;
+      font-size: 30px;
+      
+  }
+  .nav-middle{
+      width: 55%;
+      justify-content: center;
+      background-color: transparent;
+      display: inline-flex;
+  }
+  .nav-middle ul li{
+      text-decoration: none;
+      display: inline-block;
+      padding: 32px 10px;
+      text-align: center;
+      font-size: 18px;
+  }
+  
+  .nav-right{
+      width:20%;
+      
+  }
+  .nav-right ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 32px 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .header-side{
+      margin-top: 5vh;
+      width: 20%;
+      height: 35vh;
+      background-color: transparent;
+  }
+  .navigation-div{
+    display: none;
+    }
+  .header-bottom{
+
+      height: 20vh;
+      display: inline;
+      justify-content:center ;
+      width: 100%;
+  }
+  .header-bottom h2{
+      text-align: center;
+      justify-content: center;
+      font-size: 50px;
+      font-weight: 1000;
+  }
+  .navigation-div{
+    overflow: hidden;
+    width: 0%;
+    height: 80vh;
+    margin-right: -47%;
+    right: 50%;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 99;
+    transition: ease-in-out .5s;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.navigation-div-items{
+  display: none;
+  
+}
+  .product-box{
+    width: 42%;
+    height: 550px;
+    border-radius: 15px;
+    margin: 20px;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(253, 253, 253, 0.75);
+    text-align: center;
+    }
+    .image{
+      margin-top: 15px;
+      height: 400px;
+      width: 320px;
+    }
+    .product-box-link {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      
+    }
+    .product-box-link a{
+      padding: 20px 50px;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 2px;
+      color: #000000;
+    } 
+    .tutorials{
+      height: 80vh;
+      background-image: url(images/ipadtutorial.png);
+    }
+    .tutorials h1{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      font-size: 40px;
+    }
+    .tutorials-text{
+      width: 100%;
+      font-size: 25px;
+      right: 0px;
+      
+      text-align: center;
+      font-size: 28px;
+      
+    }
+    .tutorials-text h3{
+      font-size: 20px;
+      margin-top: 50vh;
+     width: 85%;
+     margin: auto;
+    }
+    .tutorials-text a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .service{
+      height: 45vh;
+    }
+    .servicesbox{
+      width: 22%;
+      margin: 25px;
+      height: 180px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 #c8d7ff, 0 6px 20px 0 #c0d0ff;
+    }
+    .servicesbox1{
+      width: 22%;
+      margin: 25px;
+      height: 180px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 #c0ffb7, 0 6px 20px 0 #a7ff99;
+    }
+    .servicesbox2{
+      width: 22%;
+      margin: 25px;
+      height: 180px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 #ffb1c9, 0 6px 20px 0 #ffa8c2;
+    }
+    #serviceiconsship{
+      font-size: 100px;
+      color: #527fff;
+    }
+    #serviceiconspayment{
+      font-size: 100px;
+      color: #35ff16;
+    }
+    #serviceiconssupport{
+      font-size: 100px;
+      color: #ff135a;
+    }
+    .about{
+      height: 65vh;
+      background-image: url(images/about.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .about h1{
+      font-size: 40px;
+      text-align: center;
+    }
+    .about-us{
+      margin:5vh auto;
+      width: 75%;
+     
+    }
+    .about-us h3{
+    
+      text-align: center;
+      font-size: 30px;
+    }
+    
+    .contact{
+      height: 40vh;
+     
+    }
+    .contact h1{
+      font-size: 40px;
+      text-align: center;
+    }
+    .contactus{
+      margin: auto;
+      width: 75%;
+    }
+    .contactus h3{
+      margin-top: 5vh;
+      font-size: 28px;
+      text-align: center;
+    }
+    
+    .footer1{
+      margin-top: 10vh;
+      margin-left:0px;
+      width: 50%;
+      height: 30vh;
+  }
+  .footer1-data{
+      margin-left: 30px;
+  }
+  .footer2{
+      text-align: center;
+      margin-top: 10vh;
+      margin-left: 0px;
+      width: 50%;
+      height: 30vh;
+  }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    .header{
+      height: 100vh;
+      width: 100%;
+      background: url(images/cover.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+      .header-bottom{
+        margin-top: 10vh;
+        height: 30vh;
+        display:inline;
+        justify-content:center ;
+        width: 100%;
+    }
+    .header-bottom h2{
+      margin-top: 20vh;
+        text-align: center;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 1000;
+    }
+    .header-bottom h3{
+      margin-top: 2vh;
+        text-align: center;
+    }
+    .image{
+      margin-top: 15px;
+      height: 400px;
+      width: 300px;
+    }
+    .product{
+      height:max-content;
+      background: url(images/productcover.png);
+      background-repeat: repeat-y;
+      background-position:center ;
+      background-size: cover;
+      background-color: #fbfefd;
+      
+     
+    }
+    .tutorials{
+      height: 60vh;
+      background-image: url(images/tutorial.png);
+    }
+    .tutorials-text h3{
+      font-size: 20px;
+      position: absolute;
+      text-align: right;
+      margin-top: 2vh;
+      width: 45%;
+      right: 50px;
+    }
+    .tutorials-text a{
+      margin-top: 27vh;
+      right: 50px;
+      color: #ffffff;
+      position: absolute;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .service{
+      height: 55vh;
+    }
+    .about{
+      height: 70vh;
+      background-image: url(images/about.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+  .logo{
+      width: 70%;
+     
+  }
+  .nav-middle{
+      display: none;
+   }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .header-nav{
+      height: 10vh;
+      width: 100%;
+      background: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .logo{
+      width: 70%;
+     
+  }
+  .logo h2{
+      padding: 32px 30px;
+      font-size: 25px;
+      
+  }
+  .nav-middle{
+     display: none;
+  }
+  .nav-middle ul li{
+    display: none;
+  }
+  
+  .nav-right{
+      width:30%;
+      
+  }
+  .nav-right ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 32px 30px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .header-side{
+      margin-top: 5vh;
+      width: 20%;
+      height: 60vh;
+      background-color: transparent;
+  }
+  .header-bottom{
+      
+    
+      height: 20vh;
+      display: inline;
+      justify-content:center ;
+      width: 100%;
+  }
+  .header-bottom h2{
+      text-align: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 1000;
+  }
+ 
+
+  
+  .product{
+    background: url(images/productmob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .product h1{
+    font-size: 25px;
+    text-align: center;
+  }
+  .products{
+    margin-top: 10vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .product-box{
+    width: 85%;
+    height: 450px;
+    border-radius: 15px;
+    margin: 20px;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(253, 253, 253, 0.75);
+  
+  }
+  .product-box-link h3{
+    padding: 20px 15px;
+    border: 1px solid black;
+  }
+  .image{
+    margin-top: 15px;
+    height: 300px;
+    width: 300px;
+  } 
+  .tutorials{
+    height: 100vh;
+    background: url(images/mobiletutorial.png);
+    background-position: center;
+    background-size: cover;
+  }  
+  .tutorials h1{
+    
+    text-align: center;
+    font-size: 25px;
+  }
+ 
+  .tutorials-text{
+    width: 100%;
+    font-size: 25px;
+    right: 0px;
+    text-align: center;
+    font-size: 28px;
+    
+  }
+  .tutorials-text h3{
+    font-size: 20px;
+    margin-top: 50vh;
+    width: 80%;
+    margin: auto;
+  }
+  .tutorials-text a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .service h1{
+    font-size: 25px;
+  }
+  .services h3{
+    font-size: 10px;
+  }
+  .servicesbox{
+    width: 45%;
+    margin: 15px;
+    height: 130px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #c8d7ff, 0 6px 20px 0 #c0d0ff;
+    
+  }
+  .servicesbox1{
+    width: 45%;
+    margin: 12px;
+    height: 130px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #c0ffb7, 0 6px 20px 0 #a7ff99;
+  }
+  .servicesbox2{
+    width: 45%;
+    margin: 15px;
+    height: 130px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #ffb1c9, 0 6px 20px 0 #ffa8c2;
+  }
+  #serviceiconsship{
+    font-size: 60px;
+    color: #527fff;
+  }
+  #serviceiconspayment{
+    font-size: 60px;
+    color: #35ff16;
+  }
+  #serviceiconssupport{
+    font-size: 60px;
+    color: #ff135a;
+  }
+  .min-bar{
+    display: block;
+    background-color: #303534;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background-color: #00BFA6;
+    opacity: .7;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    font-size: 18px;
+    box-shadow: 0 0 11px rgb(33 33 33 / 20%);
+  }
+  #min-button{
+    color: #000000;
+  }
+  #segment1{
+    display: none;
+   
+}
+  .navigation-div{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -10vh;
+    height: 0vh;
+    margin-right: -50%;
+    right: 50%;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 99;
+    transition: ease-in-out .5s;
+    background-color: white;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.navigation-div-items{
+ 
+  color: #000;
+}
+.about{
+  height: 65vh;
+  background-image: url(images/about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about h1{
+  font-size: 30px;
+  text-align: center;
+}
+.about-us{
+  margin:5vh auto;
+  width: 75%;
+ 
+}
+.about-us h3{
+
+  text-align: center;
+  font-size: 20px;
+}
+.contact{
+  height: 60vh;
+  background-image: url(images/contact.png);
+  background-position: center;
+   background-repeat: no-repeat;
+}
+.contact h1{
+  font-size: 30px;
+  text-align: center;
+}
+.contactus{
+  margin: auto;
+  width: 75%;
+}
+.contactus h3{
+  margin-top: 5vh;
+  font-size: 20px;
+  text-align: center;
+}
+.social-media{
+  text-align: center;
+  height: 25vh;
+  width:80%;
+  margin:5vh auto;
+ 
+}
+.fab{
+  font-size: 45px;
+  margin: 18px;
+  color: rgb(230, 28, 28);
+}
+
+
+
+.footer{
+  height: max-content;
+}
+.footer1{
+  margin-top: 5vh;
+  margin-left: 0px;
+  width: 100%;
+  text-align: center;
+  height: 10vh;
+}
+.footer2{
+  margin-top: 10vh;
+  margin-left: 0px;
+  width: 100%;
+  text-align: center;
+  height: 40vh;
+}
+
+.footerbottom{
+  height: 15vh;
+  font-size: 15px;
+}
+#footerbottom-h3{
+  font-size: 15px;
+  text-align: center;
+}
+  
+
+  }
