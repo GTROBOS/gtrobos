@@ -180,7 +180,7 @@ text-align: center;
 }
 .tutorials h1{
   
-  text-align: center;
+   text-align: center;
   font-size: 40px;
 }
 .tutorials-text{
@@ -257,7 +257,7 @@ height: 40vh;
   
 }
 .about{
-  height: 70vh;
+  height: 85vh;
   background-image: url(images/about.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -277,7 +277,7 @@ height: 40vh;
   font-size: 30px;
 }
 .contact{
-  height: 60vh;
+  height: 65vh;
   background-image: url(images/contact.png);
   background-position: center;
    background-repeat: no-repeat;
@@ -340,6 +340,16 @@ height: 40vh;
 .footer2 a{
   text-decoration: none;
   color: #000;
+}
+.footer3{
+  
+  
+  width: 5%;
+}
+#uparrow{
+  font-size: 50px;
+  color: #000;
+  margin-top: 30vh;
 }
 .footerbottom{
   width: 100%;
@@ -590,7 +600,9 @@ height: 40vh;
       font-size: 28px;
       text-align: center;
     }
-    
+  .footer{
+    height: 30vh;
+  }  
     .footer1{
       margin-top: 10vh;
       margin-left:0px;
@@ -604,8 +616,20 @@ height: 40vh;
       text-align: center;
       margin-top: 10vh;
       margin-left: 0px;
-      width: 50%;
+      width: 40%;
       height: 30vh;
+  }
+  .footer3{
+    margin-top: 5vh;
+    
+    width: 5%;
+  }
+  #uparrow{
+    font-size: 50px;
+    color: #000;
+  }
+  .footerbootom{
+    height:5vh;
   }
     
   }
@@ -687,6 +711,9 @@ height: 40vh;
       background-image: url(images/about.png);
       background-position: center;
       background-repeat: no-repeat;
+    }
+    .contact{
+      height: 60vh;
     }
     
     
@@ -1013,6 +1040,13 @@ height: 40vh;
   text-align: center;
   height: 40vh;
 }
+.footer3{
+ display: none;
+}
+#uparrow{
+  font-size: 50px;
+  color: #000;
+}
 
 .footerbottom{
   height: 15vh;
@@ -1022,6 +1056,7 @@ height: 40vh;
   font-size: 15px;
   text-align: center;
 }
+
   
 
-  }
+  } 
