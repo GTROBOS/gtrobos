@@ -599,7 +599,7 @@ display: none;
     .youtubevideosection{
       height: 50vh;
       
-      background:url(images/youtubebackground.png);
+      background:url(images/youtubebackground.jpg);
       background-position: center;
       background-size: cover;
     }
